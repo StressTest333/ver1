@@ -53,32 +53,6 @@
         <TopMenu {SelectComp} act_idx={active_item} />
       </nav>
     </header>
-
-    <div class="container">
-      <div class="left-sidebar">
-        <h2>Левый сайдбар</h2>
-        <p>Здесь может быть реклама, новости или дополнительные пункты меню</p>
-      </div>
-
-      <div class="main-content">
-        <h1>Основной контент</h1>
-
-        <!-- Динамические компоненты -->
-        <!-- <svelte:component
-          this={selected.component}
-          app_function={SendMessage}
-        />
-
-      </div>
-      <div class="right-sidebar">
-        <h2>Правый сайдбар </h2>
-        <!-- <DetectMessage messagefrom={current_message} /> -->
-         Здесь может быть любая дополнительная информация
-      </div>
-    </div>
-    <footer>
-      <p>Подвал</p>
-    </footer>
   </div>
 </main>
 
