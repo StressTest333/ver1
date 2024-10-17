@@ -20,16 +20,14 @@
             class:active={act_idx == i}
             on:click={() => {
                 SelectComp(i);
-                //active_idx = i;
             }}
         >
-            {i}-{item}
+            {item}
         </div>
     {/each}
 </div>
 
 <style>
-    /* https://codepen.io/Gogh/pen/eYpjbKp */
     .menu-items {
         display: flex;
         justify-content: space-between;
@@ -48,7 +46,6 @@
         color: rgb(37, 35, 35);
     }
 
-    /* этот медиа-запрос теперь нужно убрать из App */
     @media (max-width: 480px) {
         div.menu-items {
             flex-direction: column;
