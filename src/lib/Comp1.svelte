@@ -14,6 +14,11 @@
             $tarr = [...$tarr, Math.max(...$tarr) + 1];
         }
     }
+
+    let numberclick = 0
+    function clicknumber() {
+        numberclick = numberclick + 1;
+    }
     
     const removeItem = () => {
         $tarr.splice(0, 1);
@@ -50,9 +55,9 @@
         >
     </div>
     <div>
-        <button on:click={() => app_function("Сообщение от Comp1")}
-            >Кнопка 1</button
-        >
+        <button on:click={() => app_function("Сообщение от Comp1")}>Кнопка</button>
+        <button class="buttonnew" on:click={() => clicknumber}>Подсчёт нажатий</button>
+        <h1>{numberclick}</h1>
     </div>
 </div>
 
@@ -62,6 +67,12 @@
         height: 50px;
         background-color: red;
         color: azure;
+    }
+    .buttonnew {
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        color: white;
     }
     .wrapper {
         border: 1px solid silver;
