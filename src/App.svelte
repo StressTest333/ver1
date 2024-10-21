@@ -68,13 +68,14 @@
 
       <div class="main-content">
         <h1>Основной контент</h1>
-
-        <!-- Динамические компоненты -->
-        <svelte:component
-          this={selected.component}
-          app_function={SendMessage}
-        />
-
+        <div style="color:green">
+          <!-- Динамические компоненты -->
+          <svelte:component
+            this={selected.component}
+            app_function={SendMessage}
+            
+          />
+        </div>
       </div>
       <div class="right-sidebar">
         <h3>Победители викторины:</h3>
@@ -86,7 +87,7 @@
       </div>
     </div>
     <footer>
-      <p>Подвал</p>
+      <p>Создатель StressTest</p>
     </footer>
   </div>
 </main>
@@ -108,6 +109,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
   }
 
   header {

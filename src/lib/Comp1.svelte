@@ -39,18 +39,18 @@
         flt = idx;
     };
 </script>
-
-<div class="wrapper">
-    <h1>Массивы и циклы</h1>
-    <div>
-        <button class="buttonnew" on:click={() => clicksum1()}>+1</button>
-        <button class="buttonnew" on:click={() => clicksum100()}>+100</button>
-        <button class="buttonnew" on:click={() => clickum()}>*2</button>
-        <button class="buttonnew" on:click={() => clicknclear()}>Очистить</button>
-        <h1>{numberclick}</h1>
+<body>
+    <div class="wrapper">
+        <h1>Массивы и циклы</h1>
+        <div>
+            <button class="buttonnew" on:click={() => clicksum1()}>+1</button>
+            <button class="buttonnew" on:click={() => clicksum100()}>+100</button>
+            <button class="buttonnew" on:click={() => clickum()}>*2</button>
+            <button class="buttonnew" on:click={() => clicknclear()}>Очистить</button>
+            <h1>{numberclick}</h1>
+        </div>
     </div>
-</div>
-
+</body>
 <style>
     button {
         width: 100px;
