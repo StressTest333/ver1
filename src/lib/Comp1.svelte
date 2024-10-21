@@ -16,8 +16,17 @@
     }
 
     let numberclick = 0
-    function clicknumber() {
+    function clicksum1() {
         numberclick = numberclick + 1;
+    }
+    function clicksum100() {
+        numberclick = numberclick + 100;
+    }
+    function clickum() {
+        numberclick = numberclick * 2;
+    }
+    function clicknclear() {
+        numberclick = 0;
     }
     
     const removeItem = () => {
@@ -33,30 +42,11 @@
 
 <div class="wrapper">
     <h1>Массивы и циклы</h1>
-
     <div>
-        {#each $tarr.filter((el) => el != flt) as item, i (Math.floor(Math.random() * 100000))}
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
-            <div on:click={() => filterby(item)}>
-                {item}-{i}-{Math.floor(Math.random() * 100000)}
-            </div>
-        {:else}
-            Массив пуст
-        {/each}
-    </div>
-
-    <div>
-        <button on:click={addItem}>Добавить</button>
-    </div>
-    <div>
-        <button disabled={$tarr.length == 0} on:click={removeItem}
-            >Удалить</button
-        >
-    </div>
-    <div>
-        <button on:click={() => app_function("Сообщение от Comp1")}>Кнопка</button>
-        <button class="buttonnew" on:click={() => clicknumber}>Подсчёт нажатий</button>
+        <button class="buttonnew" on:click={() => clicksum1()}>+1</button>
+        <button class="buttonnew" on:click={() => clicksum100()}>+100</button>
+        <button class="buttonnew" on:click={() => clickum()}>*2</button>
+        <button class="buttonnew" on:click={() => clicknclear()}>Очистить</button>
         <h1>{numberclick}</h1>
     </div>
 </div>
@@ -78,5 +68,6 @@
         border: 1px solid silver;
         border-radius: 30px;
         padding: 30px;
+        align-content: center;
     }
 </style>
