@@ -59,19 +59,16 @@
         color: azure;
     }*/
     .btn-new {
-        border: none;
-        border-radius: 10px;
-        text-decoration: none;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
         color: white;
-        background: #45c500;
-        box-shadow: 0 5px 0 #009823;
+        transition: .2s linear;
+        background: #0bf63a;
     }
 
     .btn-new:hover {
-        background: #45c500;
-        box-shadow: none;
-        position: relative;
-        top: 5px;
+    box-shadow: #21c500 0 0px 0px 40px inset;
     }
     .wrapper {
         border: 1px solid silver;

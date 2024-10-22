@@ -46,6 +46,9 @@
   }
 
   let clicked = false;
+  import Fa from 'svelte-fa'
+  import { faFlag } from '@fortawesome/free-solid-svg-icons'
+  import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <main>
@@ -72,10 +75,9 @@
           <!-- Динамические компоненты -->
           <svelte:component
             this={selected.component}
-            app_function={SendMessage}
-            
-          />
+            app_function={SendMessage}/>
         </div>
+        <Fa icon={faGithub}  pull="left" size="5x" spin />
       </div>
       <div class="right-sidebar">
         <h3>Победители викторины:</h3>
@@ -113,7 +115,7 @@
   }
 
   header {
-    background-color: #333;
+    /* background-color: #333; */
     color: #fff;
     padding: 1em;
     text-align: center;
