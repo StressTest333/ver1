@@ -43,26 +43,35 @@
     <div class="wrapper">
         <h1>Массивы и циклы</h1>
         <div>
-            <button class="buttonnew" on:click={() => clicksum1()}>+1</button>
-            <button class="buttonnew" on:click={() => clicksum100()}>+100</button>
-            <button class="buttonnew" on:click={() => clickum()}>*2</button>
-            <button class="buttonnew" on:click={() => clicknclear()}>Очистить</button>
+            <button class="btn-new" on:click={() => clicksum1()}>+1</button>
+            <button class="btn-new" on:click={() => clicksum100()}>+100</button>
+            <button class="btn-new" on:click={() => clickum()}>*2</button>
+            <button class="btn-new" on:click={() => clicknclear()}>Очистить</button>
             <h1>{numberclick}</h1>
         </div>
     </div>
 </body>
 <style>
-    button {
+    /*button {
         width: 100px;
         height: 50px;
         background-color: red;
         color: azure;
-    }
-    .buttonnew {
-        width: 100px;
-        height: 50px;
-        background-color: green;
+    }*/
+    .btn-new {
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
         color: white;
+        background: #45c500;
+        box-shadow: 0 5px 0 #009823;
+    }
+
+    .btn-new:hover {
+        background: #45c500;
+        box-shadow: none;
+        position: relative;
+        top: 5px;
     }
     .wrapper {
         border: 1px solid silver;
